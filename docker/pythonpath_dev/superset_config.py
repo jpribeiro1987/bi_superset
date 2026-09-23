@@ -164,3 +164,11 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+
+# Alterado pelo Assistente
+BABEL_DEFAULT_LOCALE = 'pt_BR'
+
+LANGUAGES = {
+    'en': {'flag': 'us', 'name': 'English'},
+    'pt_BR': {'flag': 'br', 'name': 'Brazilian Portuguese'}
+}
