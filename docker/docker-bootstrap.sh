@@ -32,6 +32,8 @@ if [ "$DEV_MODE" == "true" ]; then
       fi
     fi
 fi
+apt-get update && apt-get install -y libfbclient2
+cp /app/docker/firebird.py /app/superset/db_engine_specs/firebird.py
 REQUIREMENTS_LOCAL="/app/docker/requirements-local.txt"
 PORT=${PORT:-8088}
 # If Cypress run – overwrite the password for admin and export env variables
